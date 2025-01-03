@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Variables</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <h1>Demo on Variables</h1>
+    1. Declaring Variables<br><br>
+
+          In JavaScript, you can declare variables using three keywords:<br><br>
+
+        A. var (Oldest way):<br><br>
+            • Function-scoped.<br>
+            • Can be re-declared and updated within the same scope.<br>
+            • Does not support block-scoping (it ignores {} boundaries).<br><br>
+
+        B. let (Modern and recommended for mutable variables):<br><br>
+            • Block-scoped.<br>
+            • Can be updated but not re-declared in the same block.<br><br>
+
+        C. const (Modern and for constants):<br><br>
+            • Block-scoped.<br>
+            • Must be initialized at the time of declaration.<br>
+            • Cannot be updated or re-declared.<br><br>
+
+    2. Variable Naming Rules<br><br>
+
+            • Names can include letters, digits, underscores (_), and dollar signs ($).<br>
+            • Must begin with a letter, $, or _.<br>
+            • Are case-sensitive (myVar and myvar are different).<br>
+            • Cannot use reserved keywords (e.g., var, let, class, etc.).<br><br>
+
+    3. Variable Scope<br><br>
+
+        Scope defines where a variable is accessible:<br><br>
+
+            1.Global Scope: Variables declared outside any function or block are 
+               globally scoped.<br>
+            2.Function Scope: Variables declared with var inside a function are only 
+               accessible within that function.<br>
+            3.Block Scope: Variables declared with let or const inside {} are only accessible 
+                  within that block. <br><br>
+
+    4. Variable Hoisting<br><br>
+
+            • Variables declared with var are “hoisted” to the top of their scope but remain 
+               uninitialized until the code execution reaches their declaration.<br>
+            • Variables declared with let and const are also hoisted but cannot be used before 
+               their declaration due to the temporal dead zone.<br><br>
+
+    5. Data Types in Variables<br><br>
+
+        JavaScript variables can store different types of data:<br><br>
+
+            1.Primitive Types:<br><br>
+
+                   • String: "Hello"<br>
+                   • Number: 42<br>
+                   • Boolean: true or false<br>
+                   • Undefined: A declared variable without a value.<br>
+                   • Null: Represents the absence of a value.<br>
+                   • Symbol: Unique and immutable value.<br>
+                   • BigInt: For very large integers.<br><br>
+
+            2.Non-Primitive Types:<br><br>
+
+                   • Object: { key: "value" }<br>
+                   • Array: [1, 2, 3]<br>
+                   • Function: function() {}<br><br>
+
+    6. Best Practices<br><br>
+
+        • Use const by default. Only use let if you need to reassign the variable.<br>
+        • Avoid var unless maintaining older code.<br>
+        • Use descriptive names for variables.<br><br>
+  
+    <script src="script.js"></script>
+</body>
+</html>
